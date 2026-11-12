@@ -2,15 +2,11 @@
 
 **A Century of Human Progress**, an interactive D3.js data journalism piece built on the Gapminder dataset.
 
-DSC327 Data Visualization, Lab Terminal Project, Spring 2026
-COMSATS University Islamabad, BS Data Science, Semester 6
-
 ![MERIDIAN header](docs/preview.png)
 
-## Team
+## Author
 
-- Muhammad Asharib Khan
-- Wasi Ahmed Malik
+Muhammad Asharib Khan
 
 ## What is in this project
 

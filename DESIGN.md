@@ -2,12 +2,7 @@
 
 **A Century of Human Progress, told through Gapminder data**
 
-DSC327 Data Visualization, Lab Terminal Project, Spring 2026
-COMSATS University Islamabad, BS Data Science, Semester 6
-
-**Team**
-- Muhammad Asharib Khan
-- Wasi Ahmed Malik
+**Author:** Muhammad Asharib Khan
 
 ---
 
@@ -15,7 +10,7 @@ COMSATS University Islamabad, BS Data Science, Semester 6
 
 MERIDIAN is an interactive, browser-based data journalism piece that tells the story of global human development between 1952 and 2007 using the canonical Gapminder dataset. It is built entirely in D3.js v7 with vanilla JavaScript ES modules and no framework. A small standard-library Python script (`build.py`) packages the modules and data so the page also opens straight from disk. The reader can drag a year slider, hit play, filter by continent, pin specific countries, and watch six linked visualizations respond in real time.
 
-The brief required an advanced, insight-heavy, web-based interactive system delivered as a hosted artifact with documentation. MERIDIAN treats that brief as an invitation to do data journalism, not just data display. Every chart is paired with an editorial standfirst that frames the question, and the chart answers it.
+The goal was an advanced, insight-heavy, web-based interactive system delivered as a hosted artifact with documentation. MERIDIAN treats that goal as an invitation to do data journalism, not just data display. Every chart is paired with an editorial standfirst that frames the question, and the chart answers it.
 
 ## 2. Dataset
 
@@ -66,7 +61,7 @@ We chose six visualizations, each answering a different question and using a dif
 
 ### 3.1 Why these six, and not others
 
-Initial candidates included a Sankey of migration flows, a parallel coordinates plot, and a radial chord diagram. We dropped all three. Sankey was wrong because Gapminder has no flow data, the dataset is country-level state not migration. Parallel coordinates added clutter without insight given only three numeric indicators. Chord was visually attractive but encoded nothing the choropleth and bump did not already encode more clearly. The final six are the smallest set that covers all four reading tasks the brief asks for: comparison, ranking, distribution, and trajectory.
+Initial candidates included a Sankey of migration flows, a parallel coordinates plot, and a radial chord diagram. We dropped all three. Sankey was wrong because Gapminder has no flow data, the dataset is country-level state not migration. Parallel coordinates added clutter without insight given only three numeric indicators. Chord was visually attractive but encoded nothing the choropleth and bump did not already encode more clearly. The final six are the smallest set that covers all four reading tasks the project needs: comparison, ranking, distribution, and trajectory.
 
 ### 3.2 Chart 1: The Rosling Race (animated bubble chart)
 
@@ -126,7 +121,7 @@ A single shared tooltip DOM node is positioned by `showTooltip`, `moveTooltip`, 
 
 ## 5. Visual Design System
 
-The aesthetic is editorial data journalism in the style of Our World in Data, The Pudding, and longform New York Times interactives. The decision was deliberate: a darker dashboard look would have been easier to build but would have read as "course project". An editorial look forces every typographic and color decision to earn its place.
+The aesthetic is editorial data journalism in the style of Our World in Data, The Pudding, and longform New York Times interactives. The decision was deliberate: a darker dashboard look would have been easier to build but would have looked generic. An editorial look forces every typographic and color decision to earn its place.
 
 **Background.** A warm off-white cream (#fafaf6) rather than pure white, which is gentler on the eyes during a long read.
 
@@ -166,7 +161,7 @@ Browsers block ES module scripts and `fetch()` on `file://` URLs, so opening `in
 
 ## 7. Limitations and Future Work
 
-The dataset stops at 2007. We considered splicing in newer World Bank data to extend to 2022, but the brief asks for a coherent single dataset, and the Gapminder five-year structure does not align cleanly with annual WDI updates. Future work would rebuild against the modern Gapminder Tools dataset which is annual through 2022.
+The dataset stops at 2007. We considered splicing in newer World Bank data to extend to 2022, but the project calls for a coherent single dataset, and the Gapminder five-year structure does not align cleanly with annual WDI updates. Future work would rebuild against the modern Gapminder Tools dataset which is annual through 2022.
 
 Mobile layout is functional but not optimized, the trellis grid is the main victim. A second pass would collapse the trellis to a single column with horizontal scroll on small screens.
 
