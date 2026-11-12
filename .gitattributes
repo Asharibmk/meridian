@@ -1,0 +1,7 @@
+# Generated / vendored files: collapsed in GitHub diffs and excluded from language stats
+js/meridian.bundle.js linguist-generated=true
+data/data.js          linguist-generated=true
+js/vendor/**          linguist-vendored=true
+data/*.json           linguist-generated=true
+* text=auto eol=lf
+*.bat text eol=crlf
